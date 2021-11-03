@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <main id="container">
+            <form id="survey-form">
+                <ul>
+                    <li id="name">
+                        <div id="firstname">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" placeholder="Your First Name" required>
+                        </div>
+                        <div id="lastname">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" placeholder="Your Last Name" required>
+                        </div>
+                    </li>
+                    <li id="email">
+                        <label for="email-label">Email:</label>
+                        <input type="email" id="email-label" placeholder="Your Email" required>
+                    </li>
+                    <li id="number">
+                        <label for="number-label">Age (Optional):</label>
+                        <input type="number" id="number-label" min="18" max="99" placeholder="Your Age">
+                    </li>
+                    <li id="dropdown">
+                        <label for="role">Which option best describes your current role?</label>
+                        <select id="most-like" name="mostLike" class="form-control" required="">
+                        <option disabled="" selected="" value="">Select current role</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="openSource">Open Source</option>
+                        </select>
+                    </li>
+                    <li id="recommendQuestion">
+                        <label for="question">Would you recommend freeCodeCamp to a friend?</label>
+                        <div id="recommend">
+                            <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+                            <label><input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+                            <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+                        </div>
+                    </li>
+                    <li id="favoriteQuestion">
+                        <label for="favorite">What is your favorite feature of freeCodeCamp?</label>
+                        <select id="favorite" name="favorite" class="form-control" required="">
+                            <option disabled="" selected="" value="">Select an option</option>
+                            <option value="challenges">Challenges</option>
+                            <option value="project">Project</option>
+                            <option value="community">Community</option>
+                            <option value="openSource">Open Source</option>
+                        </select>
+                    </li>
+                    <li id="improvedQuestion">
+                        <label for="improved">What would you like to see improved? (Check all that apply)</label>
+                        <div id="checkbox-div">
+                            <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+                            <label><input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end Projects</label>
+                            <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Data Visualization</label>
+                            <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Challenges</label>
+                            <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Open Source Community</label>
+                            <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">Gitter help rooms</label>
+                            <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox">Videos</label>
+                            <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox">City Meetups</label>
+                            <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox">Wiki</label>
+                            <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox">Forum</label>
+                            <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">Additional Courses</label>
+                        </div>
+                        
+                    </li>
+                    <li id="suggestionQuestion">
+                        <label for="">Any comments or suggestions?</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+                    </li>
+                    <li>
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                    </li>
+                </ul>
+            </form>
+        </main>
+        <footer>@thenesern</footer>
+    </body>
+</html>
+
+  

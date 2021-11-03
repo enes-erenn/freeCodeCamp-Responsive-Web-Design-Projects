@@ -1,0 +1,184 @@
+* {/*** General Setting ***/
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+::placeholder {
+    padding: 1rem;
+}
+body {/*** Background ***/
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+#container {/*** Form Size ***/
+    width: 36rem;
+    height: 100%;
+    margin: 0 auto 0 auto;
+}
+header {
+    margin: 0 auto 0 auto;
+}
+#title {/*** Header ***/
+    text-align: center;
+    margin: 3.6rem 0 0 0;
+    color: #f8edeb;
+}
+#description {/*** Header ***/
+    text-align: center;
+    margin: 1rem 0 2.4rem 0;
+    color: #f8edeb;
+}
+#survey-form {/*** Form Start ***/
+    border-radius: 14px;
+    padding: 1px 3.6rem ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+li {
+    margin: 3.6rem 0;
+    display: block;
+}
+#name {
+    display: flex;
+    justify-content: space-between;
+    height: 2.4rem;
+}
+#email {
+    height: 2.4rem;
+}
+#number {
+    height: 2.4rem;
+}
+#dropdown {
+    height: 2.4rem;
+}
+#recommendQuestion {
+    height: 7.2rem;
+}
+#recommend input {
+    width: 1.2rem;
+}
+#favoriteQuestion {
+    height: 2.4rem;
+}
+#improvedQuestion {
+    height: 24rem;
+}
+#improvedQuestion input {
+    display: inline;
+    width: 1.2rem;
+}
+#suggestionQuestion {
+    height: 12rem;
+}
+input, select {
+    padding: 6px 0;
+    border-radius: 2px;
+    border: none;
+    width: 100%;;
+    color: gray;
+}
+label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: block;
+    margin: 6px 0;
+    color: #023047;
+}
+#recommend label {
+    font-weight: 500;
+}
+#checkbox-div label{
+    font-weight: 500;
+}
+textarea {
+    width: 100%;
+}
+button {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: #ee9b00;
+    border: none;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+button:hover {
+    background-color: #fb8500;
+}
+button:active {
+    background-color: #fb5607;
+}/*** Form End ***/
+
+footer { /*** Footer ***/
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 4.8rem;
+    margin-bottom: 2.4rem;
+}
+@media only screen and (max-width: 500px){
+    * {
+        font-size: 12px;
+    }
+    #container {/*** Form Size ***/
+        width: 24rem;
+        height: 100%;
+        margin: 0 auto 0 auto;
+    }
+    
+    #title {/*** Header ***/
+        text-align: center;
+        margin: 2.4rem 0 0 0;
+        color: #f8edeb;
+    }
+
+    #description {/*** Header ***/
+        text-align: center;
+        margin: 1rem 0 2.4rem 0;
+        color: #f8edeb;
+    }
+
+    #survey-form {/*** Form Start ***/
+        border-radius: 14px;
+        padding: 2.4rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    ul {
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        margin-top: -4.8rem;
+    }
+    li {
+        margin: 4.8rem 0;
+        display: block;
+    }
+    #name {
+        display: block;
+        height: 8.6rem;
+    }
+    #lastname {
+        margin-top: 2.4rem;
+    }
+    #dropdown {
+        height: 3.6rem;
+    }
+    #recommendQuestion {
+        height: 7.2rem;
+    }
+    #favoriteQuestion {
+        height: 4.8rem;
+    }
+    #improvedQuestion {
+        height: 24rem;
+    }
+    #suggestionQuestion {
+        height: 16rem;
+    }/*** Form End ***/
+
+}
