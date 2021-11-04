@@ -1,0 +1,140 @@
+* {/*** General Setting ***/
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+nav {/*** Nav Bar Start***/
+    position: fixed;
+    left: 0;
+    width: 14%;
+    height: 100vh;
+    border-right: 2px solid dimgrey;
+    overflow-y: scroll;
+    background-color: #eee;
+}
+#header {
+    font-size: 24px;
+    border-bottom: 1px solid black;
+    text-align: start;
+    padding: 1.2rem;
+}
+#pages {
+    list-style: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.nav-link{
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-bottom: 1px solid gray;
+    padding: 1.2rem;
+}/*** Nav Bar End ***/
+
+main {/*** Main Start ***/
+    margin-left: 16%;
+    padding: 2.4rem 0;
+}
+header {
+    padding: 1.2rem 0;
+}
+article{
+    padding: 0 1.2rem;
+    color: #191A19;
+    line-height: 2.4rem;
+}
+article ul {
+    padding: 1.2rem 3.6rem;
+}
+code {
+    background-color: aliceblue;
+    padding: 1.2rem 3.6rem;
+    margin: 0 2.4rem;
+    color: dimgrey;
+}
+article p {
+    margin: 2.4rem 0;
+}/*** Main End ***/
+
+footer {/*** Footer ***/
+text-align: center;
+}
+@media only screen and (max-width: 800px){
+    nav {
+        position: relative;
+        top: 0;
+        width: 100%;
+        min-height: 12rem;
+        max-height: 12rem;
+        border-bottom: 2px solid dimgrey;
+        border-right: 0;
+        overflow: scroll;
+    }
+    #header {
+        font-size: 18px;
+        border-bottom: 1px solid black;
+        text-align: start;
+        padding: 1rem;
+    }
+    .nav-link{
+        text-decoration: none;
+        color: gray;
+        font-weight: 500;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        border-bottom: 1px solid gray;
+        padding: 1.2rem;
+    }
+    main {/*** Main Start ***/
+        margin: 0 0 0 0;
+        padding: 0;
+        width: 96%;
+    }
+    header {
+        padding: 1.2rem;
+    }
+    article{
+        padding: 0 2.4rem;
+        color: #191A19;
+        line-height: 2rem;
+    }
+    article ul {
+        padding: 1.2rem 2.4rem;
+    }
+    code {
+        background-color: aliceblue;
+        padding: 1rem;
+        margin: 0;
+        color: dimgrey;
+    }
+    article p {
+        margin: 1.2rem 0;
+    }/*** Main End ***/
+    footer {/*** Footer ***/
+        text-align: center;
+        margin-bottom: 1.2rem;
+        }
+}
+@media only screen and (max-width: 1400px){
+    #header {
+        font-size: 16px;
+        border-bottom: 1px solid black;
+        text-align: start;
+        padding: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    #header {
+        font-size: 12px;
+        border-bottom: 1px solid black;
+        text-align: start;
+        padding: 1.2rem;
+    }
+}
