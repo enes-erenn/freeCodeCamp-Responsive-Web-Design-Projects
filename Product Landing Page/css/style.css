@@ -1,0 +1,262 @@
+* {/*** General Settings ***/
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  #header {/*** Header Start ***/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffe8d6;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding: 1.2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  #nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 2.4rem;
+    margin: 0 2.4rem 0 0 ;
+
+  }
+  #header-img {/** Logo **/
+    margin: 0  0 0 2.4rem;
+    cursor: default;
+  }
+  ul {
+    list-style: none;
+  }
+  #pages {
+    display: flex;
+    gap: 2.4rem;
+  }
+  #nav-link {
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease;
+  }
+  #nav-link:hover {
+    text-decoration: underline;
+    color: gray;
+  }/*** Header End ***/
+
+
+  #jumbotron {/*** Jumbotron Start ***/
+    text-align: center;
+    margin: 1.2rem 0;
+  }
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #email {
+    width: 12rem;
+    padding: 6px;
+    margin: 0 0 1.2rem 0;
+  }
+  #submit {
+    width: 8.6rem;
+    padding: 4px;
+  }/*** Jumbotron End ***/
+
+  aside {/*** Features Start ***/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3.6rem 0;
+  }
+  aside div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+  #icons{
+    width: 2.4rem;
+  }/*** Features End ***/
+
+  #video {/*** How It Works ***/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  iframe {
+    width: 800px; 
+    height: 400px;
+  }
+  section {/*** Products Start ***/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #product {/*** Products Card ***/
+    width: 24rem;
+    height: 24rem;
+    margin: 2.4rem;
+  }
+  #guitarImage {/* Product Image */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  #productImg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  #productHeader {/* Product Name */
+      display: block;
+      text-align: center;
+      align-items: center;
+      margin-bottom: 1.2rem;
+  }
+  #productBottom {/* Product Price */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 1.2rem;
+      padding: 1.2rem;
+  }
+  button {
+      padding: 1.2rem;
+  }/*** Product End ***/
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12rem;
+  }
+  @media only screen and (max-width: 2560px) {
+    main {
+      margin-top: 6%;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    main {
+      margin-top: 14%;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    main {
+      margin-top: 16%;
+    }
+    aside div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 1440px) {
+    main {
+      margin-top: 10%;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    main {
+      margin-top: 14%;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    main {
+      margin-top: 16%;
+    }
+    #video {/*** How It Works ***/
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    #header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #ffe8d6;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      padding: 1.2rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+    }
+    #nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 2.4rem;
+      margin: 0 2.4rem 0 0 ;
+  
+    }
+    #header-img {
+      margin: 0  0 0 1.2rem;
+      cursor: default;
+      font-size: 12px;
+    }
+    #pages {
+      display: flex;
+      gap: 1rem;
+      font-weight: 700;
+    }
+    #nav-link {
+      text-decoration: none;
+      color: black;
+      transition: all 0.2s ease;
+      font-size: 12px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+    main {
+      margin-top: 40%;
+    }
+    #submit {
+      width: 8rem;
+      padding: 4px;
+      margin-top: 4px;
+    }
+
+
+  #video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    height: 400px;
+  }
+
+  section {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  #product {
+    width: 100%;
+    height: 100%;
+    margin: 3.6rem 0;
+  }
+  button {
+      padding: 1.2rem;
+      margin: 2px;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12rem;
+    margin-bottom: 2.4rem;
+  }
+  }
