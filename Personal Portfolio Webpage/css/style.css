@@ -1,0 +1,329 @@
+* {/*** General Settings ***/
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
+}
+nav {/*** Nav Bar Start ***/
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #112D4E;
+    width: 100%;
+    padding: 1rem 0;
+}
+#nav-link, #title {
+    color: #F9F7F7; 
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+#title {
+    margin-left: 2rem;
+    cursor: default;
+}
+#nav-link {
+    margin-right: 2rem;
+    padding: 1rem;
+}
+#nav-link:hover {
+    background-color: #E84545;
+}
+#navbar {/*** Nav Bar End ***/
+    list-style: none;
+    display: flex;
+}
+
+#welcome-section {/*** Jumbotron Start ***/
+    background-color: #DBE2EF;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+}
+#avatar {
+    width: 20rem;
+}
+#jumbotron {
+    margin: auto 1%;
+    font-size: 3.6rem;
+    color: #1B262C;
+    cursor: default;
+}
+
+#text-1 {
+    font-weight: 300;
+}
+#text-2 {
+    font-weight: 500;
+}
+#text-3 {
+    color: #E84545;
+    font-weight: 500;
+}/*** Jumbotron End ***/
+
+section{/*** Works Start ***/
+    width: 100%;
+    background-color: #DBE2EF
+}
+#work-title {
+    color: #53354A;
+    font-weight: 700;
+    font-size: 2.4rem;
+    border-bottom: 1px solid black;
+    margin: 3.6rem 0;
+}
+#work-header {
+    display: flex;
+    align-items: center;
+    margin: 0 0 3.6rem 0;
+    justify-content: center;
+    width: 100%;
+    cursor: default;
+}
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+#project-container {
+    width: 100%;
+}
+.project {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2.4rem 0;
+    transition: all 0.3s ease;
+    background-color: white;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.project:hover {
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+.project-image {
+    width: 480px;
+    height: 360px;
+    margin: 0;
+    object-fit: cover;
+}
+#project-name {
+    width: 100%;
+    padding: 1.2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B2E4A;
+
+}
+#project-title {
+    list-style: none;
+    text-decoration: none;
+    color: #E84545;
+    font-weight: 700;
+}
+#showAll button {
+    padding: 1.2rem 2.4rem;
+    
+}
+#btn {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border: none;
+    background-color: #E84545;
+    border-radius: 12px;
+    color: #DBE2EF;
+    cursor: pointer;
+}
+#btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#showAll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}/*** Works End ***/
+
+#contact{/*** Contact Start ***/
+    width: 100%;
+    background-color: #DBE2EF;
+    padding-top: 20rem;
+}
+#contact-title {
+    font-size: 3.6rem;
+    padding: 3.6rem;
+    text-align: center;
+    color: #1B262C;
+}
+.contact-links {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+.contact-links li {
+    padding: 2.4rem;
+    margin: 2rem;
+    text-align: center;
+    height: 5rem;
+}
+#contact-icons {
+    display: block;
+    margin: 0 auto 0 auto;
+    margin-bottom: 1rem;
+    transition: all 0.6s ease;
+}
+#contact-icons:hover {
+    margin-top: 3.6rem;
+}
+footer {
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #DBE2EF;
+}
+@media only screen and (max-width: 1200px){
+    .project {
+        width: 400px;
+    }
+
+    .project-image {
+        width: 400px;
+    }
+    #contact-title {
+        font-size: 2.4rem;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .project {
+        width: 360px;
+    }
+    .project-image {
+        width: 360px;
+    }
+    #contact-icons {
+        width: 4.8rem;
+    }
+}
+@media only screen and (max-width: 800px){
+    #welcome-section {
+        display: flex;
+        flex-direction: row;
+    }
+    #avatar {
+        margin: auto 5%;
+        width: 18rem;
+    }
+    #jumbotron {
+        margin: auto auto;
+        font-size: 3rem;
+        color: #1B262C;
+        cursor: default;
+        text-align: center;
+    }
+    #projects {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .project {
+        width: 100%;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+    .contact-links {
+        gap: 0rem;
+    }
+    .contact-links li {
+        padding: 1.2rem;
+        margin: 2rem;
+        text-align: center;
+        height: 5rem;
+    }
+    #contact-icons {
+        display: block;
+        margin: 0 auto 0 auto;
+        margin-bottom: 1rem;
+        transition: all 0.6s ease;
+    }
+}
+@media only screen and (max-width: 500px){
+    body {
+        background-color: #DBE2EF;  
+    }
+    nav {
+        width: 100%;
+    }
+    #nav-link, #title {
+        font-size: 12px;
+    }
+    #title {
+        margin-left: 1rem;
+    }
+    #nav-link {
+        width: 100%;
+        margin-right: 1rem;
+        padding: 1rem;
+    }
+    #welcome-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #avatar {
+        margin: 50% auto;
+        width: 12rem;
+    }
+    #jumbotron {
+        margin: -12% auto;
+        font-size: 2.4rem;
+        color: #1B262C;
+        cursor: default;
+        text-align: center;
+    }
+    #work-title {
+        font-size: 1.4rem;
+        border-bottom: 1px solid black;
+        margin: auto auto;
+    }
+    #contact{
+        width: 100%;
+        background-color: #DBE2EF;
+        padding-top: 12rem;
+    }
+    #contact-title {
+        font-size: 1.8em;
+        padding: 2.4rem;
+    }
+    .contact-links {
+        display: block;
+    }
+    footer {
+        width: 100%;
+        height: 12rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background-color: #DBE2EF;
+        margin-bottom: 1.2rem;
+    }
+    #projects {
+        width: 100%;
+    }
+}
