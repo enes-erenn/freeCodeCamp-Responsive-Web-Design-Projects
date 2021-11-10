@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -16,9 +17,9 @@
             <h1 id="title">Enes</h1>
         </div>
         <ul id="navbar">
-            <li><a id="nav-link" href="#welcome-section">About</a></li>
-            <li><a id="nav-link" href="#work">Work</a></li>
-            <li><a id="nav-link" href="#contact">Contact</a></li>
+            <a id="nav-link" href="#welcome-section">About</a>
+            <a id="nav-link" href="#work">Work</a>
+            <a id="nav-link" href="#contact">Contact</a>
         </ul>
     </nav>
     <section id="welcome-section">
@@ -27,6 +28,7 @@
         </div>
         <div id="jumbotron">
             <h4 id="text-1">Hi there,</h4>
+
             <h1 id="text-2">I'm Enes</h1>
             <h6 id="text-3">a full stack web developer</h6>
         </div>
@@ -35,7 +37,7 @@
         <div id="work-header"><h1 id="work-title">These are some of my projects</h1></div>
         <div id="projects">
             <article  class="project">
-                <div id="project-container">
+                <div id="img-container">
                     <a id="project-title" href="" target="_blank" class="project project-tile">
                         <img class="project-image" src="https://images.pexels.com/photos/7563612/pexels-photo-7563612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="project">
                     </a>
@@ -112,12 +114,49 @@
     <section id="contact">
         <h1 id="contact-title">Connect with me</h1>
         <ul class="contact-links">
-            <li><a href=""><img id="contact-icons" src="https://cdn-icons-png.flaticon.com/128/25/25347.png" alt=""></a>Twitter</li>
-            <li><a href=""><img id="contact-icons" src="https://cdn-icons-png.flaticon.com/128/38/38401.png" alt=""></a>Github</li>
-            <li><a href=""><img id="contact-icons" src="https://cdn-icons.flaticon.com/png/128/2099/premium/2099199.png?token=exp=1636108407~hmac=353ac6810694ecdb2b0561dfbc6db1b6" alt=""></a>Email</li>
-            <li><a href=""><img id="contact-icons" src="https://cdn-icons-png.flaticon.com/128/61/61109.png" alt=""></a>Linkedin</li>
+            <li id="contact-icons">
+                <a href="">
+                    <span>
+                        <i class="fab fa-twitter-square"></i>
+                    </span>
+                    <span>
+                        Twitter
+                    </span>
+                </a>
+            </li>
+            <li id="contact-icons">
+                <a href="">
+                    <span>
+                        <i class="fab fa-github-square"></i>
+                    </span>
+                    <span>
+                        Github
+                    </span>
+                </a>
+            </li>
+            <li id="contact-icons">
+                <a href="">
+                    <span>
+                        <i class="fas fa-envelope-square"></i>
+                    </span>
+                    <span>
+                        Email
+                    </span>
+                </a>
+            </li>
+            <li id="contact-icons">
+                <a href="">
+                    <span>
+                        <i class="fab fa-linkedin"></i>
+                    </span>
+                    <span>
+                        Linkedin
+                    </span>
+                </a>
+            </li>
         </ul>
     </section>
     <footer>@thenesern</footer>
+    <script src="https://kit.fontawesome.com/d7bc1b3658.js" crossorigin="anonymous"></script>
 </body>
 </html>

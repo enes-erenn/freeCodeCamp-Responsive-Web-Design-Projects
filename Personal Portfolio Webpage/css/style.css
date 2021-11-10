@@ -1,10 +1,15 @@
 * {/*** General Settings ***/
     padding: 0;
     margin: 0;
-    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
-nav {/*** Nav Bar Start ***/
+body {/*** General Settings ***/
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+nav {/*** Header Start ***/
     position: fixed;
     top: 0;
     display: flex;
@@ -12,7 +17,8 @@ nav {/*** Nav Bar Start ***/
     justify-content: space-between;
     background-color: #112D4E;
     width: 100%;
-    padding: 1rem 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; 
+    height: 3.6rem;
 }
 #nav-link, #title {
     color: #F9F7F7; 
@@ -24,17 +30,24 @@ nav {/*** Nav Bar Start ***/
     margin-left: 2rem;
     cursor: default;
 }
-#nav-link {
-    margin-right: 2rem;
+
+#navbar a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
     padding: 1rem;
 }
-#nav-link:hover {
+#navbar a:hover {
     background-color: #E84545;
 }
-#navbar {/*** Nav Bar End ***/
+#navbar {
     list-style: none;
     display: flex;
-}
+    height: 100%;
+}/*** Header End ***/
 
 #welcome-section {/*** Jumbotron Start ***/
     background-color: #DBE2EF;
@@ -90,22 +103,20 @@ section{/*** Works Start ***/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
-    width: 80%;
+    width: 86%;
 }
-#project-container {
-    width: 100%;
+#img-container {
+    width: 50%;
 }
 .project {
     width: 480px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin: 2.4rem 0;
     transition: all 0.3s ease;
-    background-color: white;
+    background-color: #fff;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 .project:hover {
@@ -124,7 +135,6 @@ section{/*** Works Start ***/
     align-items: center;
     justify-content: center;
     background-color: #2B2E4A;
-
 }
 #project-title {
     list-style: none;
@@ -167,25 +177,42 @@ section{/*** Works Start ***/
 }
 .contact-links {
     display: flex;
-    list-style: none;
+    flex-wrap: wrap;
     gap: 1.2rem;
-    align-items: center;
-    justify-content: center;
+    height: 3.6rem;
 }
 .contact-links li {
     padding: 2.4rem;
     margin: 2rem;
     text-align: center;
-    height: 5rem;
 }
+
 #contact-icons {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto 0 auto;
     margin-bottom: 1rem;
     transition: all 0.6s ease;
 }
+.fas, .fab {
+    font-size: 6.4rem;
+    color: gray;
+    transition: 0.3s;
+}
+.fas:hover,
+.fab:hover {
+    color: black;
+
+}
 #contact-icons:hover {
-    margin-top: 3.6rem;
+    margin-top: 1.2rem;
+}
+#contact-icons a {
+    text-decoration: none;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
 }
 footer {
     width: 100%;
