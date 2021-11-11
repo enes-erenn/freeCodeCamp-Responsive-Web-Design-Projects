@@ -8,6 +8,7 @@ body {/*** General Settings ***/
     font-family: "Lato", sans-serif;
     width: 100%;
     height: 100%;
+    background-color: #DBE2EF
 }
 nav {/*** Header Start ***/
     position: fixed;
@@ -20,17 +21,20 @@ nav {/*** Header Start ***/
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; 
     height: 3.6rem;
 }
-#nav-link, #title {
-    color: #F9F7F7; 
-    text-decoration: none;
+#title {
     font-size: 24px;
+    color: #fff; 
+}
+#nav-link {
+    color: #fff; 
+    text-decoration: none;
+    font-size: 20px;
     font-weight: 700;
 }
 #title {
     margin-left: 2rem;
     cursor: default;
 }
-
 #navbar a {
     height: 100%;
     width: 100%;
@@ -50,7 +54,6 @@ nav {/*** Header Start ***/
 }/*** Header End ***/
 
 #welcome-section {/*** Jumbotron Start ***/
-    background-color: #DBE2EF;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -60,7 +63,12 @@ nav {/*** Header Start ***/
     min-height: 600px;
 }
 #avatar {
-    width: 20rem;
+    margin: auto 0;
+}
+#avatar-img {
+    width: 18rem;
+    border-radius: 50%;
+    object-fit: contain;
 }
 #jumbotron {
     margin: auto 1%;
@@ -68,7 +76,6 @@ nav {/*** Header Start ***/
     color: #1B262C;
     cursor: default;
 }
-
 #text-1 {
     font-weight: 300;
 }
@@ -82,19 +89,17 @@ nav {/*** Header Start ***/
 
 section{/*** Works Start ***/
     width: 100%;
-    background-color: #DBE2EF
 }
 #work-title {
     color: #53354A;
     font-weight: 700;
     font-size: 2.4rem;
     border-bottom: 1px solid black;
-    margin: 3.6rem 0;
 }
 #work-header {
     display: flex;
     align-items: center;
-    margin: 0 0 3.6rem 0;
+    margin: 12% auto;
     justify-content: center;
     width: 100%;
     cursor: default;
@@ -107,14 +112,15 @@ section{/*** Works Start ***/
     margin: 0 auto;
     width: 86%;
 }
-#img-container {
-    width: 50%;
+#img-container a {
+    width: 100%;
+    margin: 0;
 }
 .project {
     width: 480px;
     display: flex;
     flex-direction: column;
-    margin: 2.4rem 0;
+    margin: 2.4rem 1.2rem;
     transition: all 0.3s ease;
     background-color: #fff;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
@@ -124,9 +130,9 @@ section{/*** Works Start ***/
 }
 .project-image {
     width: 480px;
-    height: 360px;
-    margin: 0;
-    object-fit: cover;
+    height: 100%;
+    margin: 2.4rem 0;
+    object-fit: contain;
 }
 #project-name {
     width: 100%;
@@ -144,7 +150,6 @@ section{/*** Works Start ***/
 }
 #showAll button {
     padding: 1.2rem 2.4rem;
-    
 }
 #btn {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -167,10 +172,10 @@ section{/*** Works Start ***/
 #contact{/*** Contact Start ***/
     width: 100%;
     background-color: #DBE2EF;
-    padding-top: 20rem;
+    margin-top: 24%;
 }
-#contact-title {
-    font-size: 3.6rem;
+.contact-title {
+    font-size: 2.4rem;
     padding: 3.6rem;
     text-align: center;
     color: #1B262C;
@@ -178,41 +183,34 @@ section{/*** Works Start ***/
 .contact-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.2rem;
     height: 3.6rem;
+    list-style: none;
 }
 .contact-links li {
     padding: 2.4rem;
-    margin: 2rem;
     text-align: center;
 }
 
 #contact-icons {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto 0 auto;
-    margin-bottom: 1rem;
+    margin: 0 auto;
     transition: all 0.6s ease;
 }
 .fas, .fab {
     font-size: 6.4rem;
     color: gray;
-    transition: 0.3s;
 }
 .fas:hover,
 .fab:hover {
     color: black;
-
 }
 #contact-icons:hover {
     margin-top: 1.2rem;
 }
 #contact-icons a {
-    text-decoration: none;
-    color:black;
     display: flex;
     flex-direction: column;
-    list-style: none;
+    text-decoration: none;
+    color:black;
 }
 footer {
     width: 100%;
@@ -222,44 +220,38 @@ footer {
     justify-content: center;
     background-color: #DBE2EF;
 }
-@media only screen and (max-width: 1200px){
-    .project {
-        width: 400px;
+@media only screen and (max-width: 1024px){
+    #nav-link {
+        font-size: 16px;
     }
-
-    .project-image {
-        width: 400px;
-    }
-    #contact-title {
-        font-size: 2.4rem;
-    }
-}
-@media only screen and (max-width: 1000px){
-    .project {
-        width: 360px;
-    }
-    .project-image {
-        width: 360px;
-    }
-    #contact-icons {
-        width: 4.8rem;
-    }
-}
-@media only screen and (max-width: 800px){
-    #welcome-section {
-        display: flex;
-        flex-direction: row;
-    }
-    #avatar {
-        margin: auto 5%;
-        width: 18rem;
+    #avatar-img {
+        width: 12rem;
     }
     #jumbotron {
-        margin: auto auto;
-        font-size: 3rem;
-        color: #1B262C;
-        cursor: default;
+        font-size: 2.4rem;
+    }
+    .fas, .fab {
+        font-size: 4.8rem;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #welcome-section {
+        flex-direction: column;
+    }
+    #avatar {
+        margin: auto 0 0 0;
+    }
+    #avatar-img {
+        width: 12rem;
+    }
+    #jumbotron {
+        margin: 0 auto auto auto;
+        font-size: 2.4rem;
         text-align: center;
+    }
+    #work-title {
+        font-size: 1.6rem;
     }
     #projects {
         display: block;
@@ -267,90 +259,93 @@ footer {
         width: 90%;
     }
     .project {
-        width: 100%;
+        margin: 3.6rem auto;
     }
-
-    .project-image {
-        width: 100%;
-    }
-    .contact-links {
-        gap: 0rem;
+    .contact-title {
+        font-size: 1.8rem;
+        padding: 2.4rem;
     }
     .contact-links li {
-        padding: 1.2rem;
-        margin: 2rem;
-        text-align: center;
-        height: 5rem;
+        margin: 1.2rem;
     }
-    #contact-icons {
-        display: block;
-        margin: 0 auto 0 auto;
-        margin-bottom: 1rem;
-        transition: all 0.6s ease;
+    .fas, .fab {
+        font-size: 3.6rem;
+        color: gray;
     }
+    #contact-icons a {
+    font-size: 12px;
+    }
+
 }
 @media only screen and (max-width: 500px){
-    body {
-        background-color: #DBE2EF;  
-    }
-    nav {
-        width: 100%;
+    #navbar a {
+        margin: 0 6px;
     }
     #nav-link, #title {
-        font-size: 12px;
+        font-size: 14px;
     }
     #title {
         margin-left: 1rem;
     }
-    #nav-link {
-        width: 100%;
-        margin-right: 1rem;
-        padding: 1rem;
-    }
     #welcome-section {
-        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        min-height: 600px;
     }
     #avatar {
-        margin: 50% auto;
-        width: 12rem;
+        margin: 0 auto;
+    }
+    #avatar-img {
+        width: 6.4rem;
     }
     #jumbotron {
-        margin: -12% auto;
-        font-size: 2.4rem;
-        color: #1B262C;
-        cursor: default;
-        text-align: center;
+        margin: 0 auto;
+        font-size: 1.8rem;
     }
     #work-title {
         font-size: 1.4rem;
-        border-bottom: 1px solid black;
-        margin: auto auto;
+    }
+    .project {
+        margin: 2.4rem auto;
+        width: 280px;
+    }
+    .project-image {
+        width: 100%;
+        height: 100%;
+        margin: 1.2rem 0;
+    }
+    #project-name {
+        padding: 1rem 0;
+        font-size: 12px;
     }
     #contact{
-        width: 100%;
-        background-color: #DBE2EF;
-        padding-top: 12rem;
+        padding-top: 6.4rem;
     }
-    #contact-title {
-        font-size: 1.8em;
-        padding: 2.4rem;
+    .contact-title {
+        font-size: 1.6rem;
     }
     .contact-links {
         display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    #contact-icons {
+        width: 36%;
+        margin: 0 auto;
+    }
+    .contact-links li {
+        padding: 1rem 0;
+    }
+    #contact-icons:hover {
+        margin-top: 0rem;
     }
     footer {
         width: 100%;
-        height: 12rem;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        background-color: #DBE2EF;
+        margin-top: auto;
         margin-bottom: 1.2rem;
     }
-    #projects {
-        width: 100%;
-    }
+
 }
