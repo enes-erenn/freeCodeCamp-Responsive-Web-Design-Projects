@@ -1,4 +1,4 @@
-# Project:<a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page">Build a Tribute Page</a>
+# Project:<a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page" target="_blank"> Build a Tribute Page</a>
 ---
 ## 1280x800 Screen Size
 ![alt text](https://raw.githubusercontent.com/thenesern/-freeCodeCamp-Responsive-Web-Design-Projects/main/Images/Tribute%20Page/1280x800/1.png)
