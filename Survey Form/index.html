@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
         <title>Survey Form</title>
     </head>
     <body>
@@ -18,32 +18,32 @@
         <main id="container">
             <form id="survey-form">
                 <ul>
-                    <li id="name">
+                    <li id="name-el">
                         <div id="firstname">
-                            <label for="firstName">First Name:</label>
+                            <label for="firstName-label">First Name:</label>
                             <input type="text" id="firstName" placeholder="Your First Name" required>
                         </div>
                         <div id="lastname">
-                            <label for="lastName">Last Name:</label>
+                            <label for="lastName-label">Last Name:</label>
                             <input type="text" id="lastName" placeholder="Your Last Name" required>
                         </div>
                     </li>
-                    <li id="email">
+                    <li id="email-el">
                         <label for="email-label">Email:</label>
-                        <input type="email" id="email-label" placeholder="Your Email" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
                     </li>
-                    <li id="number">
+                    <li id="number-el">
                         <label for="number-label">Age (Optional):</label>
-                        <input type="number" id="number-label" min="18" max="99" placeholder="Your Age">
+                        <input type="number" id="number" min="18" max="99" placeholder="Your Age">
                     </li>
-                    <li id="dropdown">
+                    <li id="dropdown-el">
                         <label for="role">Which option best describes your current role?</label>
-                        <select id="most-like" name="mostLike" class="form-control" required="">
-                        <option disabled="" selected="" value="">Select current role</option>
-                        <option value="challenges">Challenges</option>
-                        <option value="projects">Projects</option>
-                        <option value="community">Community</option>
-                        <option value="openSource">Open Source</option>
+                        <select id="dropdown" name="mostLike" class="form-control" required="">
+                            <option disabled selected>Select current role</option>
+                            <option value="challenges">Challenges</option>
+                            <option value="projects">Projects</option>
+                            <option value="community">Community</option>
+                            <option value="openSource">Open Source</option>
                         </select>
                     </li>
                     <li id="recommendQuestion">
@@ -57,7 +57,7 @@
                     <li id="favoriteQuestion">
                         <label for="favorite">What is your favorite feature of freeCodeCamp?</label>
                         <select id="favorite" name="favorite" class="form-control" required="">
-                            <option disabled="" selected="" value="">Select an option</option>
+                            <option disabled selected>Select an option</option>
                             <option value="challenges">Challenges</option>
                             <option value="project">Project</option>
                             <option value="community">Community</option>
@@ -93,7 +93,7 @@
                 </ul>
             </form>
         </main>
-        <footer>@thenesern</footer>
+        <footer><a href="https://github.com/thenesern">@thenesern</a> </footer>
     </body>
 </html>
 
