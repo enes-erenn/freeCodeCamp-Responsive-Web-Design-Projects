@@ -35,7 +35,6 @@ header {
   /*** Form Size ***/
   width: 36rem;
   margin: 0 auto 0 auto;
-  backdrop-filter: saturate(70%);
 }
 
 #survey-form {
@@ -166,5 +165,9 @@ a {
   }
   label {
     font-size: 1rem;
+  }
+
+  body {
+    background: #8d99ae;
   }
 }
