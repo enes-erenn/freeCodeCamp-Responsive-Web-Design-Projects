@@ -217,10 +217,12 @@ a {
     flex-direction: column;
     width: 100%;
     gap: 1rem;
+    margin-left: 2rem;
   }
 
   #nav-bar {
     height: 16vh;
+    width: 80%;
   }
   section {
     gap: 1rem;
