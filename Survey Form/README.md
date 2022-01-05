@@ -11,4 +11,3 @@
 ## 360x800 Screen Size
 ![alt text](https://github.com/thenesern/freeCodeCamp-Responsive-Web-Design-Projects/blob/main/Images/Survey%20Form/360x800/1.png)
 ![alt text](https://github.com/thenesern/freeCodeCamp-Responsive-Web-Design-Projects/blob/main/Images/Survey%20Form/360x800/2.png)
----
